@@ -1,0 +1,22 @@
+.footer-area {
+  background: #1e1e1e;
+  text-align: center;
+  padding: 20px;
+  .footer-content {
+    padding: 20px;
+    p {
+      color: $white;
+      margin-bottom: 10px;
+    }
+    ul {
+      li {
+        a {
+          color: $white;
+          margin: 0 10px;
+          font-size: 18px;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}

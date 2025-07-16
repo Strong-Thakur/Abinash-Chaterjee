@@ -1,0 +1,29 @@
+.hero-area {
+  background-color: $bg_color;
+  .hero-content {
+    text-align: center;
+    h2 {
+      color: $white;
+      span {
+        color: $primary-color;
+      }
+    }
+    p {
+      color: $white;
+      margin-top: 20px;
+    }
+    .hero-btn {
+      background-color: $primary-color;
+      padding: 10px 20px;
+      display: inline-block;
+      color: $black_two;
+      text-transform: capitalize;
+      border-radius: 5px;
+      margin-top: 10px;
+      transition: 0.3s;
+      &:hover {
+        transform: scale(1.5);
+      }
+    }
+  }
+}

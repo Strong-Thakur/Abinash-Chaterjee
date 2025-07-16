@@ -1,0 +1,57 @@
+.contact-area {
+  .contacts-form {
+    text-align: center;
+    width: 700px;
+    margin: 0 auto;
+    padding: 50px;
+    box-shadow: 0 0 20px rgba(0, 242, 254, 0.2);
+    background: #1e1e1e;
+    @include max-xs {
+      width: 100%;
+    }
+    @include min-sm {
+      width: 100%;
+    }
+    @include min-md {
+      width: 100%;
+    }
+
+    h4 {
+      color: $primary-color;
+      text-transform: capitalize;
+      margin-bottom: 20px;
+    }
+    form {
+      input,
+      textarea {
+        width: 100%;
+        padding: 15px;
+        font-size: 16px;
+        text-transform: capitalize;
+        background: #292929;
+        outline: none;
+        margin-bottom: 20px;
+        border: none;
+        border-radius: 10px;
+      }
+      input:focus {
+        background-color: $primary-color;
+      }
+      textarea:focus {
+        background-color: $primary-color;
+      }
+      input[type="submit"] {
+        width: auto;
+        cursor: pointer;
+        background-color: $primary-color;
+        font-size: 16px;
+        text-transform: capitalize;
+        font-weight: 600;
+        transition: 0.3s;
+        &:hover {
+          transform: scale(1.5);
+        }
+      }
+    }
+  }
+}

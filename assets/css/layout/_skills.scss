@@ -1,0 +1,30 @@
+.skils-area {
+  .skils {
+    ul {
+      text-align: center;
+      width: 500px;
+      margin: 0 auto;
+      @include max-xs {
+        width: 100%;
+      }
+      li {
+        display: inline-block;
+        margin: 15px 0;
+        a {
+          text-transform: capitalize;
+          padding: 20px;
+          margin: 0 10px;
+          font-size: 16px;
+          color: $primary-color;
+          border-radius: 10px;
+          box-shadow: 0 0 10px rgba(0, 242, 254, 0.3);
+          display: inline-block;
+          &:hover {
+            background-color: $primary-color;
+            color: $bg_color;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,62 @@
+@import "variables";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: $black_bg;
+}
+img {
+  vertical-align: middle;
+  max-width: 100%;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+// Margin & Padding
+@for $i from 1 through 12 {
+  .pt-#{$i * 10} {
+    padding-top: $i * 10px;
+  }
+  .pb-#{$i * 10} {
+    padding-bottom: $i * 10px;
+  }
+  .mt-#{$i * 10} {
+    margin-top: $i * 10px;
+  }
+  .mb-#{$i * 10} {
+    margin-bottom: $i * 10px;
+  }
+}
+
+// Flex
+$flex: flex;
+@each $var in $flex {
+  .d-#{$var} {
+    display: flex;
+  }
+}
+// Justify Content
+$justify: start, center, end, space-around, space-between, space-evenly;
+@each $var in $justify {
+  .justify-#{$var} {
+    justify-content: $var;
+  }
+}
+
+// Align Items
+$aligns_items: start, center, end, space-around, space-between, space-evenly;
+@each $var in $aligns_items {
+  .align-#{$var} {
+    align-items: $var;
+  }
+}
